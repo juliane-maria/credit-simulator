@@ -13,11 +13,28 @@ class ButtonComponent extends StatelessWidget {
     return Center(
       child: Column(
         children: <Widget>[
-          ElevatedButton(
-            onPressed: null,
-            child: Text(
-              buttonText,
-              style: TextStyle(fontSize: 15),
+          Padding(
+            padding: const EdgeInsets.only(top: 70, right: 9),
+            child: SizedBox(
+              width: 340,
+              height: 50,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                    Color.fromARGB(
+                      255,
+                      33,
+                      138,
+                      147,
+                    ),
+                  ),
+                ),
+                onPressed: null,
+                child: Text(
+                  buttonText,
+                  style: const TextStyle(fontSize: 15, color: Colors.white),
+                ),
+              ),
             ),
           )
         ],
