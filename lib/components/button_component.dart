@@ -32,7 +32,7 @@ class ButtonComponent extends StatelessWidget {
                 onPressed: null,
                 child: Text(
                   buttonText,
-                  style: const TextStyle(fontSize: 15, color: Colors.white),
+                  style: const TextStyle(fontSize: 18, color: Colors.white),
                 ),
               ),
             ),
