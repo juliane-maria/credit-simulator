@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 class ButtonComponent extends StatelessWidget {
   final String buttonText;
-
+  final void Function()? onTap;
   const ButtonComponent({
     Key? key,
     required this.buttonText,
+    required this.onTap,
   }) : super(key: key);
 
   @override
@@ -29,7 +30,7 @@ class ButtonComponent extends StatelessWidget {
                     ),
                   ),
                 ),
-                onPressed: null,
+                onPressed: onTap,
                 child: Text(
                   buttonText,
                   style: const TextStyle(fontSize: 18, color: Colors.white),
