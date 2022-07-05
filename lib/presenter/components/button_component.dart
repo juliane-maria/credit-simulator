@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simular_credito/presenter/theme_app.dart';
 
 class ButtonComponent extends StatelessWidget {
   final String buttonText;
@@ -21,14 +22,8 @@ class ButtonComponent extends StatelessWidget {
               height: 50,
               child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(
-                    Color.fromARGB(
-                      255,
-                      33,
-                      138,
-                      147,
-                    ),
-                  ),
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(ThemeApp.primaryColor),
                 ),
                 onPressed: onTap,
                 child: Text(
