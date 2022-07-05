@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:simular_credito/presenter/pages/home_page/widgets/form_fields_widget.dart';
 
-import '../../../components/button_component.dart';
+import '../../components/button_component.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -83,7 +84,11 @@ class HomePage extends StatelessWidget {
                 secondTitle: 'e-mail?',
                 label: 'seuemail@email.com',
               ),
-              ButtonComponent(buttonText: 'Continuar'),
+              ButtonComponent(
+                  buttonText: 'Continuar',
+                  onTap: () {
+                    Modular.to.pushNamed('/first-page');
+                  }),
             ],
           ),
         ),
