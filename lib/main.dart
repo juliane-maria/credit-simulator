@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:simular_credito/presenter/theme_app.dart';
 
 import 'core/modules/app_module.dart';
 
 void main() {
-  runApp(ModularApp(module: AppModule(), child: MainWidget()));
+  runApp(ModularApp(module: AppModule(), child: const MainWidget()));
 }
 
 class MainWidget extends StatelessWidget {
@@ -13,11 +14,10 @@ class MainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'App da ju',
+      title: 'Simulador de Crédito',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color.fromARGB(255, 251, 251, 252),
-        secondaryHeaderColor: const Color.fromRGBO(11, 107, 185, 1),
+        primaryColor: ThemeApp.primaryColor,
       ),
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,

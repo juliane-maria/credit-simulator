@@ -1,5 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:simular_credito/presenter/pages/first_page/first_page.dart';
+import 'package:simular_credito/presenter/pages/second_page/second_page.dart';
 
 import '../../presenter/pages/home_page/home_page.dart';
 
@@ -15,6 +16,10 @@ class AppModule extends Module {
         ChildRoute(
           '/first-page',
           child: (context, args) => const FirstPage(),
+        ),
+        ChildRoute(
+          '/second-page',
+          child: (context, args) => const SecondPage(),
         ),
       ];
 }

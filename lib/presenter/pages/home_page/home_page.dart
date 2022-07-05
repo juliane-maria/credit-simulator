@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:simular_credito/presenter/pages/home_page/widgets/form_fields_widget.dart';
 
 import '../../components/button_component.dart';
+import 'widgets/form_fields_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
