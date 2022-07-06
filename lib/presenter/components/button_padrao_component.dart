@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simular_credito/presenter/theme_app.dart';
+
+import '../theme_app.dart';
 
 class ButtonComponent extends StatelessWidget {
   final String buttonText;
