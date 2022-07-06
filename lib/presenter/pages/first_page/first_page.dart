@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import '../../components/button_component.dart';
+import '../../components/button_padrao_component.dart';
 import '../../components/progress_bar_component.dart';
 import '../../theme_app.dart';
 import 'widgets/form_simula_widget.dart';
