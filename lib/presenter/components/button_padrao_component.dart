@@ -17,9 +17,9 @@ class ButtonComponent extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(top: 70, right: 9),
+            padding: const EdgeInsets.only(top: 30, right: 9),
             child: SizedBox(
-              width: 340,
+              width: 310,
               height: 50,
               child: ElevatedButton(
                 style: ButtonStyle(
