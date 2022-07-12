@@ -5,9 +5,6 @@ import 'package:flutter/src/widgets/framework.dart';
 import '../../../theme_app.dart';
 
 class TextoDescritivoWidget extends StatelessWidget {
-  final String text;
-  const TextoDescritivoWidget({Key? key, required this.text}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -15,7 +12,10 @@ class TextoDescritivoWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 20, top: 20),
           child: Text(
-            text,
+            'Bitcoin caiu? Fique Tranquilo! '
+            'Na garantia\nprotegida,você não recebe'
+            ' chamada de\nmargem '
+            'e não é liquidado.',
             style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.normal,
